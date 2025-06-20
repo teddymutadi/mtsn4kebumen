@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Improvement Plan</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* Agar header tidak tertutup */
+        }
+        .header {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+            position: fixed; /* Memastikan header tetap di atas */
+            top: 0;
+            left: 0;
+            background: none; /* Menghilangkan background pada header */
+            z-index: 10; /* Menempatkan header di atas elemen lain */
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.geocities.ws/diklat/RKM%20Kebumen%20MAN%204%20Kebumen/picture/abstractblue.jpg') repeat center;
+            background-size: cover;
+            position: relative;
+            padding-top: 80px; /* Padding untuk memberi ruang pada header */
+            z-index: 1; /* Menempatkan content di bawah header */
+        }
+        .circle {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 16px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            position: relative;
+        }
+        .circle:hover {
+            transform: scale(1.1);
+        }
+        .circle img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .caption {
+            font-size: 16px;
+            text-align: center;
+            color: white;
+            margin-top: 10px; /* Jarak antara lingkaran dan caption */
+        }
+        .circle-wrapper {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        RENCANA KERJA MADRASAH (RKM) MTsN 2 KEBUMEN
+    </div>
+    <div class="content">
+        <div id="circles-container">
+           
+	 <! -----1. Refensi ----->
+	<div class="circle-wrapper" style="top: 20%; left: 10%;">
+                <div class="circle">
+                    <a href="https://www.geocities.ws/diklat/RKM%20Kebumen%20MAN%204%20Kebumen/website%20content/referensi.html" target="_blank">
+                        <img src="https://www.geocities.ws/diklat/RMK%20MTsN%202%20Kebumen/icon/reference.png" alt="Foto 1">
+                    </a>
+                </div>
+                <div class="caption">REFERENSI</div>
+            </div>
+            
+ 	<! -----2. Eds Kemendikbud  ----->
+	<div class="circle-wrapper" style="top: 20%; left: 56%;">
+		<div class="circle">
+                    <a href="https://teddymutadi.github.io/mtsn4kebumen/eds.html" target="_blank">
+                        <img src="https://www.geocities.ws/diklat/RMK%20MTsN%202%20Kebumen/icon/kemendikbudsize.png" alt="Foto 2">
+                    </a>
+                </div>
+
+                <div class="caption">EDS KEMENDIKBUD</div>
+            </div>
+           
+	<! -----3. Edm Kemenag  -----> 
+	<div class="circle-wrapper" style="top: 60%; left: 10%;">
+                <div class="circle">
+                    <a href="https://www.geocities.ws/diklat/RKM%20Kebumen%20MAN%204%20Kebumen/website%20content/edm.html" target="_blank">
+                        <img src="https://www.geocities.ws/diklat/RMK%20MTsN%202%20Kebumen/icon/kemenagsize.png" alt="Foto 6">
+                    </a>
+                </div>
+                <div class="caption">EDM KEMENAG</div>
+            </div>
+
+	<! -----4. usaid  -----> 
+	<div class="circle-wrapper" style="top: 20%; left: 33%;">
+                <div class="circle">
+                    <a href="https://www.geocities.ws/diklat/RKM_MTsNKebumen/usaid.html" target="_blank">
+                        <img src="https://www.geocities.ws/diklat/RMK%20MTsN%202%20Kebumen/icon/usaid.webp" alt="Foto 3">
+                    </a>
+                </div>
+                <div class="caption">USAID</div>
+ 		</div>
+	
+		<! -----5. KELINGBUDUNG  -----> 
+	<div class="circle-wrapper" style="top: 20%; left: 79%;">
+                <div class="circle">
+                    <a href="https://teddymutadi.github.io/mtsn4kebumen/kelingbudung.html" target="_blank">
+                        <img src="https://www.geocities.ws/diklat/RMK%20MTsN%202%20Kebumen/icon/winner.png" alt="Foto 3">
+                    </a>
+                </div>
+                <div class="caption">KELING BUDUNG</div>
+            </div>
+
+		<! -----6. rkm  ----->
+            <div class="circle-wrapper" style="top: 60%; left: 33%;">
+                <div class="circle">
+                    <a href="https://teddymutadi.github.io/mtsn4kebumen/rkm.html" target="_blank">
+                        <img src="https://www.geocities.ws/diklat/RMK%20MTsN%202%20Kebumen/icon/prosesrkmcanva.png" alt="Foto 4">
+                    </a>
+                </div>
+                <div class="caption">RKM</div>
+            </div>
+
+            <! -----7. RKT RKAM  ----->
+	<div class="circle-wrapper" style="top: 60%; left: 56%;">
+                <div class="circle">
+                    <a href="https://teddymutadi.github.io/mtsn4kebumen/rkt_rkam.html" target="_blank">
+                        <img src="https://www.geocities.ws/diklat/RMK%20MTsN%202%20Kebumen/icon/tahunansize21.png" alt="Foto 5">
+                    </a>
+                </div>
+                <div class="caption">RKT dan RKAM</div>
+            </div>
+           
+	   <! -----8. blue print  ----->
+	<div class="circle-wrapper" style="top: 60%; left: 79%;">
+                <div class="circle">
+                    <a href="https://teddymutadi.github.io/mtsn4kebumen/laporan.html" target="_blank">
+                        <img src="https://www.geocities.ws/diklat/RMK%20MTsN%202%20Kebumen/icon/finaldraft.png" alt="Foto 5">
+                    </a>
+                </div>
+                <div class="caption">BLUE DRAFT RKM</div>
+            </div>
+
+		
+
+        </div>
+    </div>
+</body>
+</html>
