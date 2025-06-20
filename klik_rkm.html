@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Webinar</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #40E0D0;
+}
+        .dropdown {
+            position: absolute;
+            top: 8px;
+            right: 10px;
+        }
+        .dropbtn {
+            background-color: orange;
+            color: white;
+            padding: 8px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropbtn::before {
+            content: "\2630"; /* Unicode for hamburger menu icon */
+            font-size: 24px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: white;
+            min-width: 250px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+}
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+
+
+        }
+
+        .fire-circle {
+            position: relative;
+            width: 180px;
+            height: 180px;
+            background-color: red;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(255, 69, 0, 0.5), 0 0 40px rgba(255, 69, 0, 0.5), 0 0 60px rgba(255, 69, 0, 0.5);
+            animation: fire-animation 1s infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .fire-circle:hover {
+            background-color: green;
+        }
+
+        .fire-circle img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        @keyframes fire-animation {
+            0% {
+                box-shadow: 0 0 20px rgba(255, 69, 0, 0.5), 0 0 40px rgba(255, 69, 0, 0.5), 0 0 60px rgba(255, 69, 0, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 30px rgba(255, 140, 0, 0.7), 0 0 60px rgba(255, 140, 0, 0.7), 0 0 90px rgba(255, 140, 0, 0.7);
+            }
+            100% {
+                box-shadow: 0 0 20px rgba(255, 69, 0, 0.5), 0 0 40px rgba(255, 69, 0, 0.5), 0 0 60px rgba(255, 69, 0, 0.5);
+            }
+        }
+    </style>
+</head>
+<div class="dropdown">
+            <button class="dropbtn"></button>
+            <div class="dropdown-content">
+                <a href="https://teddymutadi.github.io/myportfolio/tpm.pdf" target="_blank">Tim Pengembang Madrasah</a>
+ 		<a href="https://teddymutadi.github.io/myportfolio/jadwalkerja.pdf" target="_blank">Target Kerja</a>
+                <a href="https://www.canva.com/design/DAGlfSGofDw/cnjzENFS7KQ_snejF5tqgg/edit?utm_content=DAGlfSGofDw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Kerangka Kerja</a>
+                <a href="https://geocities.ws/mrteddy/presentasirkm.pdf" target="_blank">Presentasi RKM</a>
+		<a href="https://docs.google.com/spreadsheets/d/1e1q3k4_Kw6tkfGpmn4K1EPlk6Os317n4/edit?usp=sharing&ouid=115206601342561338319&rtpof=true&sd=true" target="_blank">Rapor Pendidikan & PBD</a>
+		<a href="https://docs.google.com/spreadsheets/d/137e64KtGaJuU_Et-uC0aaTxsWsxb_FkP/edit?usp=sharing&ouid=115206601342561338319&rtpof=true&sd=true" target="_blank">Instrumen Profil Madrasah</a>
+		<a href="https://docs.google.com/document/d/1Zn9d57HmNC3UlNIydD2_av-nQXaRgGzR/edit?usp=sharing&ouid=115206601342561338319&rtpof=true&sd=true" target="_blank">Profil Madrasah</a>
+		</div>
+        </div>
+<body>
+    <a href="https://teddymutadi.github.io/mtsn4kebumen/login.html" target="_blank" style="text-decoration: none;">
+        <div class="fire-circle">
+            <svg width="180" height="180" viewBox="0 0 180 180">
+                <defs>
+                    <path id="curveTop" d="M 20,90 A 70,70 0 0,1 160,90" fill="transparent"/>
+                    <path id="curveBottom" d="M 20,90 A 70,70 0 0,0 160,90" fill="transparent"/>
+                </defs>
+                <text font-size="14" fill="white" font-weight="bold">
+                    <textPath href="#curveTop" startOffset="50%" text-anchor="middle" font-size="18">RKM, RKT, RKAM</textPath>
+                </text>
+                <text font-size="14" fill="white" font-weight="bold">
+                    <textPath href="#curveBottom" startOffset="50%" text-anchor="middle" font-size="18">M T s N &nbsp; 4 &nbsp; K E B U M E N</textPath>
+                </text>
+            </svg>
+            <img src="https://www.geocities.ws/mutadi/klik.png" alt="Webinar Image">
+        </div>
+    </a>
+</body>
+</html>
