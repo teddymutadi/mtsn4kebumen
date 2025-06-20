@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Improvement Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://www.geocities.ws/diklat/background%20web/abstractblue.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            flex-direction: column;
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+            padding: 20px 0;
+            font-family: 'Roboto', sans-serif;
+            position: absolute;
+            top: 1cm;
+        }
+
+        .login-form {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "mtsn4kebumen" && password === "rowokele") {
+                window.location.href = "https://teddymutadi.github.io/mtsn4kebumen/landingpage.html";
+            } else {
+                alert("Username atau password tidak valid.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+       <h2>Rencana Kerja Madrasah (RKM) MTsN 2 Kebumen</h2>
+    </header>
+    <div class="login-form">
+        <h2>Silakan Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br><br>
+
+            <input type="button" value="Login" onclick="validateForm()">
+        </form>
+    </div>
+</body>
+</html>
