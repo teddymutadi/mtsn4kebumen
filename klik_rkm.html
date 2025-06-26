@@ -5,7 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Webinar</title>
     <style>
-        body, html {
+      .floating-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8cm;
+    height: 8cm;
+    z-index: 9999;
+    animation: floatRandom 20s infinite;
+    pointer-events: none;
+}
+
+
+@keyframes floatRandom {
+    0% {
+        top: 10vh;
+        left: 5vw;
+        transform: rotate(0deg);
+    }
+    25% {
+        top: 60vh;
+        left: 30vw;
+        transform: rotate(30deg);
+    }
+    50% {
+        top: 20vh;
+        left: 70vw;
+        transform: rotate(-15deg);
+    }
+    75% {
+        top: 80vh;
+        left: 40vw;
+        transform: rotate(20deg);
+    }
+    100% {
+        top: 10vh;
+        left: 90vw;
+        transform: rotate(0deg);
+    }
+}  
+
+
+
+
+	body, html {
             height: 100%;
             margin: 0;
             display: flex;
@@ -112,7 +155,10 @@
 		</div>
         </div>
 <body>
-    <a href="https://teddymutadi.github.io/mtsn4kebumen/login.html" target="_blank" style="text-decoration: none;">
+    <img src="https://teddymutadi.github.io/mtsn3kebumen/floating%20quotes.png" class="floating-image" alt="Floating Image">
+
+
+	<a href="https://teddymutadi.github.io/mtsn4kebumen/login.html" target="_blank" style="text-decoration: none;">
         <div class="fire-circle">
             <svg width="180" height="180" viewBox="0 0 180 180">
                 <defs>
